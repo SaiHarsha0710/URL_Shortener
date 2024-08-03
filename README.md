@@ -46,7 +46,7 @@ To run this project locally, follow these steps:
      npm start  
     ```
 
-5. **Access the Website**
+4. **Access the Website**
     Open your browser and navigate to http://localhost:3002.
 
 ## Contribution Guidelines
