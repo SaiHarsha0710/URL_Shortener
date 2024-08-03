@@ -11,16 +11,15 @@ A dynamic website for users who are tired of long URLs. URL Shortener converts y
 
 ## Tech Stack
 
-- **Backend:** Django, Python
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap
-- **Database:** SQLite
+- **Backend:** NodeJS, ExpressJS
+- **Frontend:** HTML, CSS, JavaScript, EmbeddedJS
+- **Database:** MongoDB
 - **Version Control:** Git
-- **Deployment:** Railway
 
 ## Project Highlights
 
 - **Custom 404 Error Page:** Displays possible error causes and provides a redirect button to the homepage.
-- **Unique URL Generation:** Uses Python's SHA256 hashing algorithm to generate unique short URLs.
+- **Unique URL Generation:** Uses shortId.generate a package that automatically shorts the Full URL.
 - **URL Extraction:** Extracts and correctly handles URL schemes (http, https) and hosts.
 
 ## Live Demo
@@ -39,21 +38,16 @@ To run this project locally, follow these steps:
 
 2. **Install Dependencies**
     ```sh
-    pip install -r requirements.txt
+   npm install
     ```
 
-3. **Apply Migrations**
+3. **Start the Development Server**
     ```sh
-    python manage.py migrate
-    ```
-
-4. **Start the Development Server**
-    ```sh
-    python manage.py runserver
+     npm start  
     ```
 
 5. **Access the Website**
-    Open your browser and navigate to `http://127.0.0.1:8000`.
+    Open your browser and navigate to http://localhost:3002.
 
 ## Contribution Guidelines
 
@@ -64,3 +58,9 @@ I welcome contributions to this project! Please follow these steps:
 3. Commit your changes.
 4. Push to the branch.
 5. Open a pull request.
+
+For major changes, please open an issue to discuss what you want to change.
+
+## Contact
+
+For feedback, questions, or collaboration opportunities, please get in touch with maddinenivenkatasaiharsha@gmail.com.
