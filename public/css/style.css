@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 80%; /* 80% of the viewport width */
+    max-width: none; /* Ensure the max-width doesn't limit the navbar width */
+    align-items: center;
+    background-color: #264653;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 10%; /* Center the navbar with 10% margin on the left */
+    right: 10%; /* Center the navbar with 10% margin on the right */
+    margin-left: auto; /* Center the navbar */
+    margin-right: auto; /* Center the navbar */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navbar-left a {
+    margin-right: 20px;
+}
+
+.navbar-right {
+    color: white;
+    font-size: 18px;
+}
+
+/* Intro Styles */
+.intro {
+    margin-top: 60px; /* Adjust for navbar height */
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 30px;
+    color: #264653;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #264653;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #51e2f5;
+    text-align: center;
+    padding: 80px 30px;
+    padding-top: 120px; /* Adjust for navbar height */
+}
+
+.container .heading {
+    font-size: 65px;
+    color: #645069;
+}
+
+div.form {
+    padding: 30px 0;
+}
+
+div.form form input {
+    padding: 5px 30px;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.form form button {
+    border: 0;
+    outline: none;
+    background-color: #2a9d8f;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.link-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e9c46a;
+    padding: 20px;
+    margin: 4px;
+}
+
+.link-box .full, .link-box .short {
+    width: 40%;
+}
+
+.link-box div a {
+    color: #264653;
+    word-break: break-all;
+}
+
+.clicks {
+    height: 20px;
+    width: 20px;
+    background: #2a9d8f;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete span {
+    color: #d11a2a;
+    font-size: 24px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .container .heading {
+        font-size: 48px;
+    }
+
+    div.form form input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    div.form form button {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+
+    .link-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-box .full, .link-box .short {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .clicks {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .heading {
+        font-size: 30px;
+    }
+
+    div.form form input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    div.form form button {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .link-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-box .full {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        word-break: break-all;
+    }
+
+    .link-box .short {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .clicks {
+        margin: 10px auto;
+    }
+}
