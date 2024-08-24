@@ -32,7 +32,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the Repository**
     ```sh
-    git https://github.com/SaiHarsha0710/URL_Shortener.git
+    git clone https://github.com/SaiHarsha0710/URL_Shortener.git
     cd shortener
     ```
 
