@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const urlRouter = require('./routes/urlRout')
-mongoose.connect('mongodb://127.0.0.1:27017/urlshorts')
+mongoose.connect('mongodb+srv://maddinenivenkatasaiharsha:HGR8w0ij1SRxJ5gH@cluster0.ggf8u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const db = mongoose.connection;
 

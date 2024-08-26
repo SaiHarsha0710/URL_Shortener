@@ -2,7 +2,7 @@
   "name": "shortner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -13,6 +13,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4",
     "shortid": "^2.2.16"
   }
 }
