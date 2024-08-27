@@ -5,7 +5,9 @@ const path = require('path');
 const env=require('dotenv')
 env.config();
 
-mongoose.connect('mongodb+srv://${process.env.db_username}:${process.env.db_password}@${process.env.db_host}/?retryWrites=true&w=majority&appName=Cluster0', {
+const mongoURI = `mongodb+srv://${process.env.db_username}:${process.env.db_password}@${process.env.db_host}/?retryWrites=true&w=majority&appName=Cluster0`;
+
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
