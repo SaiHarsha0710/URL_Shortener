@@ -2,8 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const urlRouter = require('./routes/urlRout')
 const path = require('path');
+const env=require('dotenv')
+env.config();
 
-mongoose.connect('mongodb+srv://maddinenivenkatasaiharsha:HGR8w0ij1SRxJ5gH@cluster0.ggf8u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://${process.env.db_username}:${process.env.db_password}@${process.env.db_host}/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
