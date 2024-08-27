@@ -35,8 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('views', path.join(__dirname, 'views'));
 
-module.exports = (req, res) => {
-    app(req, res);
-  };
-  
+app.listen(3000,()=>{
+    console.log("running");
+})
   
