@@ -39,9 +39,4 @@ module.exports = (req, res) => {
     app(req, res);
   };
   
-  app.use((req, res, next) => {
-    // Extract the client's IP address
-    const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    console.log(`${req.method} ${req.url} - ${new Date().toISOString()} - IP: ${ipAddress}`);
-    next(); 
-  });
+  
