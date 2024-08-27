@@ -25,9 +25,13 @@ app.use(express.static('public'));
 
 app.use(express.json())
 
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({extended: true}));
 
-app.use('/',urlRouter)
+app.use('/',urlRouter);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.set('views', path.join(__dirname, 'views'));
 
 app.listen(port, () => {
     console.log("Server is running on port", port);
