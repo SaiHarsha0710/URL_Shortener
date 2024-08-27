@@ -5,14 +5,12 @@ const path = require('path');
 const env = require('dotenv');
 env.config();
 
-const mongoURI = `mongodb+srv://${process.env.db_username}:${process.env.db_password}@${process.env.db_host}/?retryWrites=true&w=majority&appName=Cluster0`;
-
-mongoose.connect(mongoURI, {})
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => {
-    console.error('Error connecting to MongoDB:', err.message);
-    process.exit(1);  // Exit the process with an error
-  });
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 const app = express();
 
