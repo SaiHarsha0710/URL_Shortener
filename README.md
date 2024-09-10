@@ -24,7 +24,7 @@ A dynamic website for users who are tired of long URLs. URL Shortener converts y
 
 ## Live Demo
 
-🚀 Check out the live project: [Shortener](#)
+🚀 Check out the live project: [Shortener](https://url-shortener1-psi.vercel.app/)
 
 ## Setup Instructions
 
